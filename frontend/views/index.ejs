@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>หน้าแรก</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playpen+Sans+Thai:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .playpen-sans-thai {
+        font-family: "Playpen Sans Thai", cursive;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .google-sans {
+        font-family: "Google Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings: "GRAD" 0;
+      }
+    </style>
+  </head>
+  <body class="playpen-sans-thai">
+
+    <%- include('partials/carousel') %>
+   
+    <%- include('partials/navbar') %>
+    <br>
+
+    <!-- สินค้า -->
+    <div class="container google-sans px-4 p-4">
+      <div class="row">
+        <div class="col p-3">
+          <img src="/images/p1.jpg" width="200" height="200" class="rounded-circle border border-4 border-info shadow-lg"/>
+        </div>
+        <div class="col p-3">
+          <img
+            src="/images/p2.jpg"
+            width="300"
+            height="200"
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="col p-3">สินค้า</div>
+      </div>
+      <div class="row">
+        <div class="col">สินค้า</div>
+        <div class="col">สินค้า</div>
+        <div class="col">สินค้า</div>
+      </div>
+      <div class="row">
+        <div class="col">สินค้า</div>
+        <div class="col">สินค้า</div>
+        <div class="col">สินค้า</div>
+      </div>
+    </div>
+    <!-- สินค้า -->
+
+    <%- include('partials/footer') %>
+
+  </body>
+</html>
